@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "547348596457",
+    "project_id": "studynitp-44523",
+    "storage_bucket": "studynitp-44523.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:547348596457:android:f16d2fbcdeb90d1ea25278",
+        "android_client_info": {
+          "package_name": "com.mohyaseensidd.studynitp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNvRhVFVIMe8c-c22BZB_iU-NIcw68tAI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
