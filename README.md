@@ -48,3 +48,26 @@ Our goal was to centralize and democratize academic content using a *community-d
 - Posting academic doubts and getting help from peer volunteers
 
 ---
+## 🛠️Setup Instructions
+1. Install Android Studio
+-Make sure you have Android Studio installed.
+
+2. Clone the Repository
+Open Terminal (or Git Bash) and run:
+-git clone  https://github.com/Yaseen11121/StudyNITP-.git
+-cd repository-StudyNITP
+
+3. Open the Project in Android Studio
+-If you didn’t clone via Android Studio:
+-Launch Android Studio
+-Click File > Open
+-Navigate to the cloned folder and open it
+
+4. Run the App
+-Connect a physical device (USB Debugging ON) or open an emulator
+-Press the green Run button (▶️) or Shift + F10
+---
+
+
+
+
