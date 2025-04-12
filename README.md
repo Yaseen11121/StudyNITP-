@@ -55,7 +55,6 @@ Our goal was to centralize and democratize academic content using a *community-d
 2. Clone the Repository
 Open Terminal (or Git Bash) and run:
 -git clone  https://github.com/Yaseen11121/StudyNITP-.git
--cd repository-StudyNITP
 
 3. Open the Project in Android Studio
 -If you didn’t clone via Android Studio:
