@@ -13,6 +13,9 @@
         android:theme="@style/Theme.StudyNITP"
         tools:targetApi="31">
         <activity
+            android:name=".loadingTransition"
+            android:exported="false" />
+        <activity
             android:name=".supportPage"
             android:exported="false" />
         <activity

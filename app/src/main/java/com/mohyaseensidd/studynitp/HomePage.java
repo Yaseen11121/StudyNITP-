@@ -1,6 +1,7 @@
 package com.mohyaseensidd.studynitp;
 
 import android.content.Intent;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -9,6 +10,7 @@ import androidx.appcompat.widget.Toolbar;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -28,7 +30,15 @@ public class HomePage extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_home_page);
 
+
         setDrawer();
+
+        drawerLayout = findViewById(R.id.drawer_layout);
+        AnimationDrawable animationDrawable = (AnimationDrawable) drawerLayout.getBackground();
+        animationDrawable.setEnterFadeDuration(5000);
+        animationDrawable.setExitFadeDuration(5000);
+        animationDrawable.start();
+
 
         subjectList = new ArrayList<>();
         subjectList.add(new Subject("Digital Signal Processing",R.drawable.dsp_img));
@@ -46,13 +56,13 @@ public class HomePage extends AppCompatActivity {
 
         ImageView profileImg = findViewById(R.id.profileIcon);
         profileImg.setOnClickListener(v->{
-            Intent intent = new Intent(this,profilePage.class);
+            Intent intent = new Intent(this,loadingTransition.class);
             startActivity(intent);
         });
     }
 
     private void setDrawer(){
-        drawerLayout = findViewById(R.id.drawer_layout);
+
         navList = findViewById(R.id.nav_list);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);

@@ -25,7 +25,7 @@ public class ComingSoon extends AppCompatActivity {
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.backbtn);
-        getSupportActionBar().setTitle("Coming Soon");
+        getSupportActionBar().setTitle("Coming Soon!");
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

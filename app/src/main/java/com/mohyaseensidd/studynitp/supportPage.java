@@ -3,17 +3,21 @@ package com.mohyaseensidd.studynitp;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
 
 import java.util.Arrays;
@@ -43,6 +47,13 @@ public class supportPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_support_page);
+
+        Toolbar toolbar = findViewById(R.id.spToolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeAsUpIndicator(R.drawable.backbtn);
+        getSupportActionBar().setTitle("Support");
+
         LinearLayout container = findViewById(R.id.containerLayout);
 
         Toast.makeText(this,"Click link to mail!!",Toast.LENGTH_SHORT).show();
@@ -64,6 +75,24 @@ public class supportPage extends AppCompatActivity {
             addBox(container, box);
         }
 
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.homebtn, menu);
+        return true;
+    }
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId() == android.R.id.home) {
+            onBackPressed(); // Go back
+            return true;
+        }else if (item.getItemId() == R.id.action_home) {
+            Intent intent = new Intent(this, HomePage.class);
+            startActivity(intent);
+            finish();
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
     private void addBox(LinearLayout parent, BoxData box) {
         // Create CardView for each box
