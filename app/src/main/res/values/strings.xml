@@ -5,4 +5,19 @@
     <string name="profile">profile</string>
     <string name="studynitp1">StudyNITP!</string>
     <string name="cd1">cd1</string>
+    <string name="my_profile">My Profile</string>
+    <string name="icprofile">icProfile</string>
+    <string name="name">Name</string>
+    <string name="shivam">Shivam</string>
+    <string name="email">Email</string>
+    <string name="shivam_example_com">shivam@example.com</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="_91_9123456780">+91 9123456780</string>
+    <string name="roll_number">Roll Number</string>
+    <string name="_102123456">102123456</string>
+    <string name="branch">Branch</string>
+    <string name="computer_science">Computer Science</string>
+    <string name="semester">Semester</string>
+    <string name="_4th">4th</string>
+    <string name="update">UPDATE</string>
 </resources>

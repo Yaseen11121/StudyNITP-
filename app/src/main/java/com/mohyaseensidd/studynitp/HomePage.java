@@ -46,8 +46,8 @@ public class HomePage extends AppCompatActivity {
 
         ImageView profileImg = findViewById(R.id.profileIcon);
         profileImg.setOnClickListener(v->{
-//            Intent intent = new Intent(this,profilePage.class);
-//            startActivity(intent);
+            Intent intent = new Intent(this,profilePage.class);
+            startActivity(intent);
         });
     }
 

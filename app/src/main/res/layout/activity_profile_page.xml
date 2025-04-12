@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF8F8"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Profile Image -->
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/profile_icon"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="20dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/icprofile" />
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_profile"
+            android:textSize="30sp"
+            android:textColor="#FFD430"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Editable Fields -->
+        <EditText
+            android:id="@+id/nameEditText"
+            android:hint="@string/name"
+            android:text="@string/shivam"
+            style="@style/ProfileInput" />
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:hint="@string/email"
+            android:text="@string/shivam_example_com"
+            android:inputType="textEmailAddress"
+            style="@style/ProfileInput" />
+
+        <EditText
+            android:id="@+id/mobileEditText"
+            android:hint="@string/mobile_number"
+            android:text="@string/_91_9123456780"
+            android:inputType="phone"
+            style="@style/ProfileInput" />
+
+        <EditText
+            android:id="@+id/rollEditText"
+            android:hint="@string/roll_number"
+            android:text="@string/_102123456"
+            android:inputType="number"
+            style="@style/ProfileInput" />
+
+        <EditText
+            android:id="@+id/branchEditText"
+            android:hint="@string/branch"
+            android:text="@string/computer_science"
+            style="@style/ProfileInput" />
+
+        <EditText
+            android:id="@+id/semesterEditText"
+            android:hint="@string/semester"
+            android:text="@string/_4th"
+            style="@style/ProfileInput" />
+
+        <!-- Update Button -->
+        <Button
+            android:id="@+id/updateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/update"
+            android:textSize="25sp"
+            android:textAllCaps="true"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#FFD430"
+            android:textColor="#121211"
+            android:padding="12dp"
+            android:layout_marginBottom="40dp" />
+
+
+    </LinearLayout>
+</ScrollView>
