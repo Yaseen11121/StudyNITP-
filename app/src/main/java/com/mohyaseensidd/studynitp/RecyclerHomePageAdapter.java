@@ -47,14 +47,14 @@ public class RecyclerHomePageAdapter extends RecyclerView.Adapter<RecyclerHomePa
             case 3 :
             case 2 :
                 holder.subCard.setOnClickListener(v->{
-//                    Intent intent = new Intent(context,ComingSoon.class);
-//                    context.startActivity(intent);
+                    Intent intent = new Intent(context,ComingSoon.class);
+                    context.startActivity(intent);
                 });
                 break;
             case 6 :
                 holder.subCard.setOnClickListener(v->{
-//                    Intent intent = new Intent(context,supportPage.class);
-//                    context.startActivity(intent);
+                    Intent intent = new Intent(context,supportPage.class);
+                    context.startActivity(intent);
                 });
         }
     }
