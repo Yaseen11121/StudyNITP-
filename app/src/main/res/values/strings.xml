@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">StudyNITP</string>
+    <string name="studynitp">StudyNITP!</string>
+    <string name="todo">TODO</string>
+    <string name="profile">profile</string>
+    <string name="studynitp1">StudyNITP!</string>
+    <string name="cd1">cd1</string>
 </resources>
