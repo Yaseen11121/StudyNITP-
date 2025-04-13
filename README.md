@@ -1,7 +1,7 @@
 ## 📊 Links
 
 - *🎞 Video Pitch*: [YouTube Pitch](https://www.youtube.com/watch?v=VIDEO_ID)
-- *🖼 Presentation Slide*: [Google Slides](https://docs.google.com/presentation/d/PRESENTATION_ID)
+- *🖼 Presentation Slide*: [Google Slides](https://drive.google.com/file/d/1NumAn5QiRtXIYqZ3s8bAoL9ZMR-sQ0bx/view?usp=drive_link)
 - *📱 App APK (Demo)*: [Download APK](https://drive.google.com/file/d/APP_LINK)
 ---
 
@@ -65,6 +65,11 @@ git clone  https://github.com/Yaseen11121/StudyNITP-.git
 -Connect a physical device (USB Debugging ON) or open an emulator
 -Press the green Run button (▶️) or Shift + F10
 ---
+
+
+### Note:
+This repository was originally created from my first GitHub account. However, due to local Git config, the commits have been made from my second account. All the work is done solely by me.
+
 
 
 
