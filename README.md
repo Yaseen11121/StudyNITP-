@@ -67,5 +67,10 @@ git clone  https://github.com/Yaseen11121/StudyNITP-.git
 ---
 
 
+### Note:
+This repository was originally created from my first GitHub account. However, due to local Git config, the commits have been made from my second account. All the work is done solely by me.
+
+
+
 
 
