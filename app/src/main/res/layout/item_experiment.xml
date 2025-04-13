@@ -1,0 +1,45 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:cardBackgroundColor="#FFEB75"
+    android:elevation="100dp"
+    android:layout_margin="12dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        >
+
+        <TextView
+            android:id="@+id/tvExperimentName"
+            android:layout_width="307dp"
+
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Experiment Name"
+            android:textColor="#000000"
+            android:textSize="28sp" />
+
+        <ImageView
+            android:id="@+id/ivYoutube"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="YouTube"
+            android:src="@drawable/yt_icon" />
+
+        <ImageView
+            android:id="@+id/ivPdf"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:contentDescription="PDF"
+            android:src="@drawable/pdf_icon" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

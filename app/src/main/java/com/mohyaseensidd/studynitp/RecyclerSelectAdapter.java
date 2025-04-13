@@ -52,10 +52,10 @@ public class RecyclerSelectAdapter extends RecyclerView.Adapter<RecyclerSelectAd
                 });
                 break;
             case 5 :
-//                holder.card.setOnClickListener(v->{
-//                    Intent intent = new Intent(context, DSP_Experiment_sem4.class);
-//                    context.startActivity(intent);
-//                });
+                holder.card.setOnClickListener(v->{
+                    Intent intent = new Intent(context, DSP_Experiment_sem4.class);
+                    context.startActivity(intent);
+                });
         }
 
     }
