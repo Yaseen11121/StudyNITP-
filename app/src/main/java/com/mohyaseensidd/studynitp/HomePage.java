@@ -11,6 +11,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -24,6 +25,8 @@ public class HomePage extends AppCompatActivity {
     DrawerLayout drawerLayout;
     ListView navList;
     ArrayList<Nav_item> navItems;
+
+    ImageView menu;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,11 +36,18 @@ public class HomePage extends AppCompatActivity {
 
         setDrawer();
 
+        menu = findViewById(R.id.menuIcon);
+
+
         drawerLayout = findViewById(R.id.drawer_layout);
         AnimationDrawable animationDrawable = (AnimationDrawable) drawerLayout.getBackground();
         animationDrawable.setEnterFadeDuration(5000);
         animationDrawable.setExitFadeDuration(5000);
         animationDrawable.start();
+
+        menu.setOnClickListener(v->{
+            drawerLayout.openDrawer(GravityCompat.START);
+        });
 
 
         subjectList = new ArrayList<>();
@@ -78,8 +88,22 @@ public class HomePage extends AppCompatActivity {
         navList.setAdapter(adapter);
 
         navList.setOnItemClickListener((parent, view, position, id) -> {
-            Toast.makeText(this, "Clicked: " + navItems.get(position).title, Toast.LENGTH_SHORT).show();
-            drawerLayout.closeDrawers();
+            switch(position){
+                case 0 :
+                    Intent support = new Intent(this,supportPage.class);
+                    startActivity(support);
+                    break;
+                case 1 :
+                case 2 :
+                case 3 :
+                    Toast.makeText(this, "Clicked: " + navItems.get(position).title, Toast.LENGTH_SHORT).show();
+                    drawerLayout.closeDrawers();
+                    break;
+                case 4 :
+                    Intent logout = new Intent(this,MainActivity.class);
+                    startActivity(logout);
+                    finish();
+            }
         });
     }
 }

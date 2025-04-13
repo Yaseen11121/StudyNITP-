@@ -37,8 +37,8 @@ public class RecyclerHomePageAdapter extends RecyclerView.Adapter<RecyclerHomePa
         switch(position){
             case 0 :
                 holder.subCard.setOnClickListener(v->{
-//                    Intent intent = new Intent(context,Select_ECE_Sem4.class);
-//                    context.startActivity(intent);
+                    Intent intent = new Intent(context,Select_ECE_Sem4.class);
+                    context.startActivity(intent);
                 });
                 break;
             case 1 :
