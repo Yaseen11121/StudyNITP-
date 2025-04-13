@@ -36,21 +36,17 @@ public class RecyclerHomePageAdapter extends RecyclerView.Adapter<RecyclerHomePa
         holder.img.setImageResource(subjects.get(position).getSubImg());
         switch(position){
             case 0 :
-                holder.subCard.setOnClickListener(v->{
-                    Intent intent = new Intent(context,Select_ECE_Sem4.class);
-                    context.startActivity(intent);
-                });
-                break;
             case 1 :
             case 5 :
             case 4 :
             case 3 :
             case 2 :
                 holder.subCard.setOnClickListener(v->{
-                    Intent intent = new Intent(context,ComingSoon.class);
+                    Intent intent = new Intent(context,Select_ECE_Sem4.class);
                     context.startActivity(intent);
                 });
                 break;
+
             case 6 :
                 holder.subCard.setOnClickListener(v->{
                     Intent intent = new Intent(context,supportPage.class);
