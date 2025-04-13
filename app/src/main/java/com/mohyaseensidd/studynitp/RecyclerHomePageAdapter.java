@@ -36,6 +36,7 @@ public class RecyclerHomePageAdapter extends RecyclerView.Adapter<RecyclerHomePa
         holder.img.setImageResource(subjects.get(position).getSubImg());
         switch(position){
             case 0 :
+
             case 1 :
             case 5 :
             case 4 :

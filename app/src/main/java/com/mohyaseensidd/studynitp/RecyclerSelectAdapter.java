@@ -38,11 +38,11 @@ public class RecyclerSelectAdapter extends RecyclerView.Adapter<RecyclerSelectAd
         holder.textView.setText(subject);
         switch(position){
             case 0 :
-//                holder.card.setOnClickListener(v->{
-//                    Intent intent = new Intent(context, DSP_Book_Select_EC_sem4.class);
-//                    context.startActivity(intent);
-//                });
-//                break;
+                holder.card.setOnClickListener(v->{
+                    Intent intent = new Intent(context, DSP_Book_Select_EC_sem4.class);
+                    context.startActivity(intent);
+                });
+                break;
             case 1 :
             case 2 :
             case 3 :
