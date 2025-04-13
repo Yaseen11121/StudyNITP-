@@ -1,9 +1,12 @@
 package com.mohyaseensidd.studynitp;
 
 import android.content.Intent;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.RelativeLayout;
+
 import androidx.appcompat.widget.Toolbar;
 
 import androidx.activity.EdgeToEdge;
@@ -28,6 +31,14 @@ public class Select_ECE_Sem4 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_select_ece_sem4);
+
+        RelativeLayout rl = findViewById(R.id.rl1);
+
+        AnimationDrawable animationDrawable = (AnimationDrawable) rl.getBackground();
+        animationDrawable.setEnterFadeDuration(5000);
+        animationDrawable.setExitFadeDuration(5000);
+        animationDrawable.start();
+
         List<String> subjectList = new ArrayList<>();
 
         Toolbar toolbar = findViewById(R.id.myToolbar);

@@ -2,6 +2,7 @@ package com.mohyaseensidd.studynitp;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.graphics.drawable.AnimationDrawable;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
@@ -11,6 +12,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -58,6 +60,7 @@ public class DSP_Book_Select_EC_sem4 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_dsp_book_select_ec_sem4);
+        RelativeLayout rlb = findViewById(R.id.rlb);
 
 
         BookList = new ArrayList<>();
@@ -76,7 +79,7 @@ public class DSP_Book_Select_EC_sem4 extends AppCompatActivity {
         booksRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                BookList.clear();
+//                BookList.clear();
                 for (DataSnapshot bookSnap : snapshot.getChildren()) {
                     book Book = bookSnap.getValue(book.class);
                     BookList.add(Book);
@@ -104,6 +107,11 @@ public class DSP_Book_Select_EC_sem4 extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.backbtn);
         getSupportActionBar().setTitle("Books");
+
+        AnimationDrawable animationDrawable = (AnimationDrawable) rlb.getBackground();
+        animationDrawable.setEnterFadeDuration(5000);
+        animationDrawable.setExitFadeDuration(5000);
+        animationDrawable.start();
     }
 
     @Override
