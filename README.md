@@ -1,6 +1,6 @@
 ## 📊 Links
 
-- *🎞 Video Pitch*: [YouTube Pitch](https://www.youtube.com/watch?v=VIDEO_ID)
+- *🎞 Video Pitch*: [YouTube Pitch](https://drive.google.com/file/d/1-RyVFbhJWMA2-piIgCCcL8fkO1RKgxbc/view?usp=drivesdk)
 - *🖼 Presentation Slide*: [Google Slides](https://drive.google.com/file/d/1NumAn5QiRtXIYqZ3s8bAoL9ZMR-sQ0bx/view?usp=drive_link)
 - *📱 App APK (Demo)*: [Download APK](https://drive.google.com/file/d/1spf0PLcUU35j2zByVARWACFOherVJAlD/view?usp=drive_link)(if link is not working , please find and download it from git repository.
 ---
