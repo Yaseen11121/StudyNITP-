@@ -1,7 +1,7 @@
 ## 📊 Links
 
 - *🎞 Video Pitch*: [YouTube Pitch](https://www.youtube.com/watch?v=VIDEO_ID)
-- *🖼 Presentation Slide*: [Google Slides]([https://docs.google.com/presentation/d/PRESENTATION_ID])
+- *🖼 Presentation Slide*: [Google Slides]([Google Slides](https://docs.google.com/presentation/d/PRESENTATION_ID))
 - *📱 App APK (Demo)*: [Download APK](https://drive.google.com/file/d/APP_LINK)
 ---
 
